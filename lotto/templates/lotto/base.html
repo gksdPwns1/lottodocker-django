@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>6/45 Lotto</title>
+</head>
+
+<body>
+
+    {% block content %}
+    {% endblock %}
+
+    {% if messages %}
+    {% for message in messages %}
+    <script>
+        alert("{{ message }}");
+    </script>
+    {% endfor %}
+    {% endif %}
+
+</body>
+
+</html>
